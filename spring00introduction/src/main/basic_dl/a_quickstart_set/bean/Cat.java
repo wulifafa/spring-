@@ -20,6 +20,11 @@ public class Cat {
         this.master = master;
     }
 
+    public Cat(String name, Person master) {
+        this.name = name;
+        this.master = master;
+    }
+
     @Override
     public String toString() {
         return "Cat{" +

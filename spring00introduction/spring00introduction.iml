@@ -23,6 +23,21 @@
         <fileset id="fileset3" name="Inject Set" removed="false">
           <file>file://$MODULE_DIR$/src/resource/basic_dl/inject-set.xml</file>
         </fileset>
+        <fileset id="fileset4" name="Oftype" removed="false">
+          <file>file://$MODULE_DIR$/src/resource/basic_dl/oftype.xml</file>
+        </fileset>
+        <fileset id="fileset5" name="Quickstart Oftype" removed="false">
+          <file>file://$MODULE_DIR$/src/resource/basic_dl/quickstart-oftype.xml</file>
+        </fileset>
+        <fileset id="fileset6" name="Quickstart Withanno" removed="false">
+          <file>file://$MODULE_DIR$/src/resource/basic_dl/quickstart-withanno.xml</file>
+        </fileset>
+        <fileset id="fileset7" name="ImmediatlyLookupApplication" removed="false">
+          <file>file://$MODULE_DIR$/src/resource/basic_dl/ImmediatlyLookupApplication</file>
+        </fileset>
+        <fileset id="fileset8" name="Annotation" removed="false">
+          <file>file://$MODULE_DIR$/src/resource/annotation/annotation.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
@@ -36,6 +51,12 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.2.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.2.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.2.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:5.2.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.2.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.2.8.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.2.8.RELEASE" level="project" />

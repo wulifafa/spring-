@@ -1,5 +1,7 @@
-package basic_dl.a_quickstart_set.bean;
+package basic_dl.a_quickstart_set;
 
+import basic_dl.a_quickstart_set.bean.Cat;
+import basic_dl.a_quickstart_set.bean.Person;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
