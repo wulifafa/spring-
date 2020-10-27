@@ -20,7 +20,7 @@ import spring.d_complexfield.bean.Person;
 public class ComplexFieldConfiguration {
 
     @Bean
-    @Primary //指定默认bean 在一个应用中一个类型的bean只能有他一个 @Qualifer不受primary干扰
+    //@Primary //指定默认bean 在一个应用中一个类型的bean只能有他一个 @Qualifer不受primary干扰
     public Person master(){
         Person master=new Person();
         master.setName("master");

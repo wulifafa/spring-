@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * 在 Bean 中直接在 属性 / setter 方法 上标注 @Autowired 注解，
@@ -25,8 +26,8 @@ public class Dog {
     private String name;
 
     @Autowired
-    @Qualifier("administrator") //多个相同类型的bean自动注入 用@Qualifier 指定bean
-    private Person person;
+   // @Qualifier("administrator") //多个相同类型的bean自动注入 用@Qualifier 指定bean
+    private List<Person> person; //注入多个对象直接用集合接收
 
     //2.构造器注入方式
 //    public Dog(Person person){

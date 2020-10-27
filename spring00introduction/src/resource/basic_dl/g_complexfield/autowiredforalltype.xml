@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--xml 复杂类型注入-->
+    <bean class="spring.g_complexfield.bean.Person">
+        <!--array注入-->
+        <property name="names">
+            <array>
+                <value>lf</value>
+                <value>12</value>
+            </array>
+        </property>
+        <!--list注入-->
+        <property name="tels">
+            <list>
+                <value>???</value>
+                <value>123</value>
+            </list>
+        </property>
+        <!--set注入-->
+        <property name="cats">
+            <set>
+                <bean class="spring.g_complexfield.bean.Cat">
+                    <property name="name" value="123"/>
+                </bean>
+                <ref bean="mimi"/>
+            </set>
+        </property>
+        <!--map注入-->
+        <property name="events">
+            <map>
+                <entry key="8:00" value="起床"/>
+                <entry key="12:00" value-ref="mimi"/>
+                <entry key="14:00">
+                    <bean class="spring.g_complexfield.bean.Cat"/>
+                </entry>
+                <entry key="18:00" value="睡觉"/>
+            </map>
+        </property>
+        <!--property注入-->
+        <property name="props">
+            <props >
+                <prop key="sex">男</prop>
+                <prop key="age">16</prop>
+            </props>
+        </property>
+    </bean>
+    <bean id="mimi" class="spring.g_complexfield.bean.Cat">
+        <property name="name" value="lf"></property>
+    </bean>
+</beans>

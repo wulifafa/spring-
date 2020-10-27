@@ -2,6 +2,7 @@ package spring.d_complexfield.app;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import spring.d_complexfield.bean.Bird;
 import spring.d_complexfield.bean.Dog;
 import spring.d_complexfield.config.ComplexFieldConfiguration;
 
@@ -18,6 +19,9 @@ public class InjectComplexFieldAnnoApplication {
     public static void main(String[] args) {
         ApplicationContext ctx=new AnnotationConfigApplicationContext(ComplexFieldConfiguration.class);
         Dog dog=ctx.getBean(Dog.class);
+        Bird bird=ctx.getBean(Bird.class);
+        System.out.println(bird);
         System.out.println(dog);
+
     }
 }
