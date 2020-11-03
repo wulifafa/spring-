@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="car1" class="spring.bean.c_instantiate.Bean.Car"/>
+    <!-- 静态工厂-->
+    <bean id="car2" class="spring.bean.c_instantiate.Bean.CarStaticFactory" factory-method="getCar"/>
+
+    <!--注册实例工厂-->
+    <bean id="carInstanceFactory" class="spring.bean.c_instantiate.Bean.CarInstanceFactory"/>
+    <bean id="car3" factory-bean="carInstanceFactory" factory-method="getCar"/>
+</beans>

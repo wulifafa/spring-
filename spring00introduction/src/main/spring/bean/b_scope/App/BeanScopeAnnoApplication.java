@@ -8,9 +8,12 @@ import spring.bean.b_scope.Config.BeanScopeConfiguration;
 public class BeanScopeAnnoApplication {
 
     public static void main(String[] args) {
-        ApplicationContext ctx=new AnnotationConfigApplicationContext(BeanScopeConfiguration.class);
-        ctx.getBeansOfType(Child.class).forEach((name,child)->{
-            System.out.println(name+":"+child);
-        });
+//        ApplicationContext ctx=new AnnotationConfigApplicationContext(BeanScopeConfiguration.class);
+//        ctx.getBeansOfType(Child.class).forEach((name,child)->{
+//            System.out.println(name+":"+child);
+//        });
+
+        ApplicationContext context=new AnnotationConfigApplicationContext("spring.bean.b_scope.Bean");
+
     }
 }
