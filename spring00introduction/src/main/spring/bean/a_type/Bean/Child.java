@@ -15,4 +15,11 @@ public class Child {
     public String getWantToy(){
         return wantToy;
     }
+
+    @Override
+    public String toString() {
+        return "Child{" +
+                "wantToy='" + wantToy + '\'' +
+                '}';
+    }
 }

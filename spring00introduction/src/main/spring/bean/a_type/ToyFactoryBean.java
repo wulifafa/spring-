@@ -19,6 +19,10 @@ public class ToyFactoryBean implements FactoryBean<Toy> {
 
     private Child child;
 
+    public ToyFactoryBean() {
+        System.out.println("ToyFactory 初始化了。。。");
+    }
+
     @Override
     public Toy getObject() throws Exception {
         switch (child.getWantToy()){
@@ -33,7 +37,7 @@ public class ToyFactoryBean implements FactoryBean<Toy> {
 
     @Override
     public Class<?> getObjectType() {
-        return null;
+        return Toy.class;
     }
 
     public void setChild(Child child) {
