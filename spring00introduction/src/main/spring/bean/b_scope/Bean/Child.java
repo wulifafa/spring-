@@ -7,4 +7,11 @@ public class Child {
     public void setToy(Toy toy) {
         this.toy = toy;
     }
+
+    @Override
+    public String toString() {
+        return "Child{" +
+                "toy=" + toy +
+                '}';
+    }
 }

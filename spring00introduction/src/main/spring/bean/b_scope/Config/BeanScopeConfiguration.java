@@ -11,6 +11,7 @@ import spring.bean.b_scope.Bean.Toy;
 @ComponentScan("spring.bean.b_scope.Bean")
 public class BeanScopeConfiguration {
 
+    //bean作用域默认是单实例的 使用原型bean生成的bean是不同的
     @Bean
     public Child child1(Toy toy) {
         Child child = new Child();
@@ -24,4 +25,6 @@ public class BeanScopeConfiguration {
         child.setToy(toy);
         return child;
     }
+
+
 }
